@@ -1,51 +1,8 @@
-
 $(document).ready(function () {
 
-    // var config = {
-    //     ".chosen-select": {},
-    //     ".chosen-select-deselect": {
-    //         allow_single_deselect: true
-    //     },
-    //     ".chosen-select-no-single": {
-    //         disable_search_threshold: 10
-    //     },
-    //     ".chosen-select-no-results": {
-    //         no_results_text: "Oops, nothing found!"
-    //     },
-    //     ".chosen-select-width": {
-    //         width: "95%"
-    //     }
-    // };
 
-    // for (var selector in config) {
-    //     $(selector).chosen(config[selector]);
-    // }
-
-    // Capture the form inputs
     $("#submit").on("click", function (event) {
         event.preventDefault();
-
-        // Form validation
-        function validateForm() {
-            var isValid = true;
-            $(".form-control").each(function () {
-                if ($(this).val() === "") {
-                    isValid = false;
-                }
-            });
-
-            $(".custom-select mr-sm-2").each(function () {
-
-                if ($(this).val() === "") {
-                    isValid = false;
-                }
-            });
-            return isValid;
-        }
-
-        // If all required fields are filled
-        if (validateForm()) {
-            // Create an object for the user"s data
             var userData = {
                 name: $("#name").val(),
                 photo: $("#photo").val(),
@@ -61,24 +18,25 @@ $(document).ready(function () {
                     $("#q9").val(),
                     $("#q10").val()
                 ]
+                
             };
+            console.log(userData);
 
-            // AJAX post the data to the friends API.
-            //NOT WORKING REVISIT 
-            $.post("../app/data/friends", friendArr, function (data) {
+            $.post("api/friends", userData, function (data) {
+                if(data){
+                    alert("new person added");
+                }
 
-                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                $("#match-name").text(data.name);
-                $("#match-img").attr("src", data.photo);
+                else{
+                    alert("shit something went wrong")
+                }
+            
 
-                // Show the modal with the best match
-                $("#results-modal").modal("toggle");
 
             });
-        } else {
-            alert("Please fill out all fields before submitting!");
-        }
+
     });
 });
+
 
 
