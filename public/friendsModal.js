@@ -2,6 +2,25 @@ $(document).ready(function () {
 
     $("#submit").on("click", function (event) {
         event.preventDefault();
+
+        function validateForm() {
+            var validEntry = true;
+            $('.form-control').each(function () {
+                if ($(this).val() === "") {
+                    validEntry = false;
+                }
+            });
+
+            $('.custom-select mr-sm-2').each(function () {
+                if ($(this).val === "") {
+                    validEntry = false;
+                }
+
+            });
+            return validEntry;
+        }
+        if (validateForm()){
+
         var userData = {
             name: $("#name").val(),
             photo: $("#photo").val(),
@@ -32,7 +51,9 @@ $(document).ready(function () {
             $('#resultsModal').modal(open);
         });
 
-
+    } else{
+        alert("You're not done filling out the form!");
+    }
     });
 });
 

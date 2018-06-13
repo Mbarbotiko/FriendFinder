@@ -41,10 +41,19 @@ a:hover{
 
 .btn-primary{
    background-color:pink;
-   border:0px;
+   border:none;
 }
 
 .btn-primary:hover{
     background-color:rgb(247, 144, 161);
+    border:none;
 
+ }
+
+ #matchImage{
+     width: 100%;
+ }
+
+ #resultsModal{
+     color:black;
  }
