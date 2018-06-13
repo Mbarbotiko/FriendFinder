@@ -1,0 +1,26 @@
+body{
+    background-image:url('friendsbg.jpg');
+    background-position: center;
+
+}
+
+.btn-primary{
+   width:auto;
+   padding-left:5%;
+   padding-right:5%;
+
+ }
+
+ .container h1{
+     border-bottom: 1px solid white;
+ }
+
+#name.form-control{
+    width:75%;
+
+}
+
+#photo.form-control{
+    width:75%;
+
+}
