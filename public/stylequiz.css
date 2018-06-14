@@ -1,15 +1,17 @@
 body{
-    background-image:none;
-    background-color:black;
-
-}
-.container{
     background-image:url('friendsbg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:100% 100%;
     background-image:cover;
-    width:1000000px;
+
+}
+.container{
+    background-color:rgb(255,255,255, .25);
+    max-width:1200px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius:5px;
 }
 .btn-primary{
    width:auto;
