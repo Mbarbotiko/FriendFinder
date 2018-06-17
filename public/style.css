@@ -50,10 +50,36 @@ a:hover{
 
  }
 
+ .btn-primary:active:focus{
+    background-color:rgb(247, 144, 161)!important;
+    border-color:pink!important;
+
+ }
+
+ 
+
  #matchImage{
      width: 100%;
  }
 
  #resultsModal{
      color:black;
+ }
+
+
+ /* @media screen and (min-width:468px ) and (orientation: landscape) { ... } */
+
+ @media (min-height: 468px), screen and (orientation: portrait) { 
+    body{
+        background-attachment: fixed;
+        background-position: center bottom; 
+    
+    }
+
+    p{
+        font-size: 2vh;
+    
+    }
+    
+
  }
