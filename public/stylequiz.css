@@ -1,9 +1,10 @@
 body{
-    background-image:url('friendsbg.jpg');
+    background-image:url('hands.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:100% 100%;
     background-image:cover;
+    margin-top:auto;
 
 }
 .container{
@@ -37,4 +38,8 @@ body{
 a{
 	color:white;
 	
+}
+
+h4{
+    font-size: 2vh;
 }

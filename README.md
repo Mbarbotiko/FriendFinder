@@ -7,5 +7,19 @@
 
 ## Demo
 	
-*Friend Finder* is deployed to Heroku. Please check it out [here]( https://frozen-island-71447.herokuapp.com/).
+*Friend Finder* is deployed to Heroku. Please check it out [here]( https://your-bestfriend-finder.herokuapp.com/).
+
+
+
+
+## Repo
+[Github](https://github.com/Mbarbotiko/FriendFinder)
+
+##Artwork credit
+*[link](http://www.wallpapers-web.com/best-friends-wallpapers/)
+
+
+##Author(s) credit
+[Portfolio](https://mbarbotiko.github.io/)
+[Github](https://github.com/Mbarbotiko/)
 
